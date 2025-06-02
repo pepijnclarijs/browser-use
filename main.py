@@ -13,7 +13,7 @@ llm = ChatGoogleGenerativeAI(model='gemini-1.5-flash')
 
 async def main():
     agent = Agent(
-        task="Compare the price of gpt-4o and DeepSeek-V3",
+        task="Go to duckduckgo search and search for 'ducks'. Then navigate to the second link.",
         llm=llm,
     )
     result = await agent.run()
